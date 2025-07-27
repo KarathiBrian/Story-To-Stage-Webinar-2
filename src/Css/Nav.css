@@ -12,7 +12,10 @@ body {
   left: 0;
   z-index: 999;
   backdrop-filter: blur(10px);
-  background-color: rgba(244, 237, 255, 0.8);
+  /* background-color: rgba(244, 237, 255, 0.8); */
+/* NEW */
+background-color: #9575cd;
+
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
@@ -31,12 +34,18 @@ body {
 
 .innerNav a {
   text-decoration: none;
-  color: #6a0dad;
+  /* color: #6a0dad; */
+/* NEW */
+color: white;
+
   transition: color 0.3s, border-bottom 0.3s;
 }
 
 .innerNav a:hover {
-  color: #4a0080; /* Slightly deeper violet */
+  /* color: #4a0080;  */
+/* NEW */
+color: white;
+
   border-bottom: 2px solid #6a0dad;
 }
 

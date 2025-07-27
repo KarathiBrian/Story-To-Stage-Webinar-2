@@ -20,7 +20,7 @@ body {
   /* background: linear-gradient(135deg, #f9d7f2 0%, #e0c3fc 100%); */
 /* background-color: #e1a3ff; */
 
-
+background-color: #f3e5f5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +62,10 @@ body {
 .down {
   height: 30%;
   width: 100%;
-  background-color: #e1a3ff;
+  /* background-color: #e1a3ff; */
+
+background-color: #f8d7ff;
+
   border-radius: 0 0 10px 10px;
   display: flex;
   gap: 80px;
@@ -76,8 +79,14 @@ body {
   width: 25%;
   border-radius: 10px;
   border: none;
-  background-color: white;
-  color: #e86aa7;
+  
+  /* background-color: #f8d7ff; */
+
+ background-color: white;
+color: #4A148C;
+
+font-family: "poppins",sans-serif;
+
   font-size: 1.1em;
   font-weight: 500;
   cursor: pointer;
@@ -157,6 +166,7 @@ body {
     width: 90%;
     height: 45px;
     font-size: 0.95em;
+
   }
 }
 
