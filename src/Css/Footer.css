@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footerBig {
+  height: 10vh;
+  width: 100%;
+}
+
+.containerFooter {
+  height: 100%;
+  width: 100%;
+
+  background-color: #f4edff;
+  color: #333333;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.containerFooter a {
+  color: darkslateblue;
+}
+
+.fb,
+.ig {
+  font-size: x-large;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.fb:hover,
+.ig:hover {
+  color: #ffa07a;
+}

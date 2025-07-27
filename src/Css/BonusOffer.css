@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #2E4057;
+  background-color: #F9F6F2;
+}
+
+.bonus-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #D8C4E1, #F5E8D2);
+  padding: 2rem 1rem;
+}
+
+.bonus-container {
+  max-width: 800px;
+  width: 100%;
+  background-color: #F0F0F0;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.bonus-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.bonus-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2E4057;
+}
+
+.bonus-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #6B7280;
+}
+
+.bonus-description,
+.bonus-closing {
+  font-size: 1.1rem;
+  color: #6B7280;
+  max-width: 600px;
+}
+
+.bonus-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 1.1rem;
+  color: #2E4057;
+}
+
+.bonus-list li::before {
+  content: '✨';
+  color: #F4C430;
+  margin-right: 0.5rem;
+}
+
+
+
+.bonus-cta {
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2E4057;
+  background-color: #F4C430;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.bonus-cta:hover {
+  background-color: #D9A825;
+  transform: translateY(-2px);
+}
+
+.bonus-cta:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .bonus-container {
+    padding: 2rem;
+  }
+
+  .bonus-title {
+    font-size: 2rem;
+  }
+
+  .bonus-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .bonus-cta {
+    width: 100%;
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bonus-title {
+    font-size: 1.75rem;
+  }
+
+  .bonus-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .bonus-description,
+  .bonus-closing,
+  .bonus-list {
+    font-size: 1rem;
+  }
+
+  .bonus-container {
+    padding: 1.5rem;
+  }
+}
