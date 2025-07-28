@@ -73,7 +73,9 @@ background-color: #F8EEFF;
 /* background-color: #f8d7ff; */
 /* NEW */
 background-color: #E8DAFC;
-/* background-color: #F8DCF8; */
+
+
+
 
   border-radius: 0 0 10px 10px;
   display: flex;
@@ -95,18 +97,41 @@ background-color: #E8DAFC;
 /* color: #4A148C; */
 
 /* NEW */
-background-color: #FFF4FD;
-
+/* background-color: #FFF4FD;
 color: #7B1FA2;
+border: 1px solid #7B1FA2; */
+
+/* background-color: #FFFFFF;
+color: #6B21A8;
+border: 1px solid #6B21A8; */
+
+
+
+
+
+
+  background-color: #A78BFA;
+color: #FFFFFF;  
+
+
+/* background-color: #9D6BFA;
+color: #FFFFFF; */
+
+
+
+
+
+
 
 font-family: "poppins",sans-serif;
-
-  font-size: 1.1em;
+font-size: 1.1em;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 2px 5px rgba(106, 13, 173, 0.3);
 }
+
+
 
 .down button:hover {
   background-color: #5a82c1;
