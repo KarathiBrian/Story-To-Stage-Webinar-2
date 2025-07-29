@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,10 +18,8 @@ body {
   height: 100%;
   width: 100%;
 
-/* NEW */
 
 background-color: #F8EEFF;
-/* background-color: #F1E6FA; */
 
 
 
@@ -68,10 +66,7 @@ background-color: #F8EEFF;
 .down {
   height: 30%;
   width: 100%;
-  /* background-color: #e1a3ff; */
 
-/* background-color: #f8d7ff; */
-/* NEW */
 background-color: #E8DAFC;
 
 
@@ -96,8 +91,6 @@ background-color: #E8DAFC;
 
 
 
-  /* background-color: #A78BFA;
-color: #FFFFFF;   */
 
 
 background-color: #9D6BFA;
@@ -204,4 +197,233 @@ font-size: 1.1em;
   .nav {
     z-index: 999;
   }
+} */
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* ✨ Animations */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomImage {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.03);
+  }
+}
+
+@keyframes fadeInButton {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.outerBig {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 5vh;
+}
+
+.containerHold {
+  height: 100%;
+  width: 100%;
+  background-color: #F8EEFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.holder {
+  height: 90%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  animation: fadeSlideUp 1.2s ease-in-out both;
+}
+
+.up {
+  height: 70%;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.up img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 6s ease;
+}
+
+.up:hover img {
+  animation: zoomImage 3s ease forwards;
+}
+
+.desktop-image {
+  display: block;
+}
+
+.mobile-image {
+  display: none;
+}
+
+.down {
+  height: 30%;
+  width: 100%;
+  background-color: #E8DAFC;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.down button {
+  height: 45%;
+  width: 25%;
+  border-radius: 10px;
+  border: none;
+  background-color: #9D6BFA;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(106, 13, 173, 0.3);
+  opacity: 0;
+  animation: fadeInButton 1s ease forwards;
+}
+
+.down button:nth-child(1) {
+  animation-delay: 1.2s;
+}
+
+.down button:nth-child(2) {
+  animation-delay: 1.4s;
+}
+
+.down button:hover {
+  background-color: #844EF8;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* 📱 Responsive Design */
+
+@media screen and (max-width: 1024px) {
+  .holder {
+    width: 85%;
+    height: 75%;
+  }
+
+  .up {
+    height: 77%;
+  }
+
+  .down {
+    height: 33%;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0;
+  }
+
+  .down button {
+    width: 70%;
+    height: 50px;
+    font-size: 1em;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .holder {
+    width: 90%;
+    height: 75%;
+  }
+
+  .up {
+    height: 70%;
+  }
+
+  .down button {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .holder {
+    width: 95%;
+    height: 75%;
+  }
+
+  .up {
+    height: 65%;
+  }
+
+  .down {
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .down button {
+    width: 90%;
+    height: 45px;
+    font-size: 0.95em;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .outerBig {
+    padding-top: 13vh;
+  }
+
+  .nav {
+    z-index: 999;
+  }
+}
+
+
+
+
+
+
+

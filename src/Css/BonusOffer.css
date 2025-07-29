@@ -79,8 +79,8 @@ body {
   padding: 0.75rem 2rem;
   font-size: 1.2rem;
   font-weight: 600;
-  color: #2E4057;
-  background-color: #F4C430;
+  color: white;
+  background-color:  #B181C7;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -88,7 +88,7 @@ body {
 }
 
 .bonus-cta:hover {
-  background-color: #D9A825;
+  background-color: #B181C7;
   transform: translateY(-2px);
 }
 

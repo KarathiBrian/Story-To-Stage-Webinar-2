@@ -1,34 +1,111 @@
+// import React from 'react';
+// import "../Css/Learn.css";
+
+// const Learn = () => {
+//   return (
+//     <div>
+//       <div className='bigLearn'>
+//         <div className='contLearn'>
+//           <h2>WHAT YOU'LL LEARN</h2>
+//           <div className='learnGrid'>
+//             <div className='gridItem'>
+//               <h4>The S.T.A.R Model to shape your story</h4>
+//               <p>A simple framework to craft your story with clarity, connection, and confidence.
+
+// </p>
+//             </div>
+//             <div className='gridItem'>
+//               <h4>How to monetize your message for impact</h4>
+//               <p>Learn how to share your story in ways that inspire and generate purpose-driven income.
+
+// </p>
+//             </div>
+//             <div className='gridItem'>
+//               <h4>3 powerful, quided exercises to help you unlock your story</h4>
+//               <p>Reflective prompts to help you uncover, shape, and speak your message with ease.
+
+// </p>
+//             </div>
+//             <div className='gridItem'>
+//               <h4>Clarity on your next steps</h4>
+//               <p>Gain clarity on who your story is meant to reach and how to deliver it with impact, confidence, and purpose.</p>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Learn;
+
+
+
+
+
 import React from 'react';
 import "../Css/Learn.css";
+import { motion } from 'framer-motion';
 
 const Learn = () => {
+  const gridItems = [
+    {
+      title: "The S.T.A.R Model to shape your story",
+      desc: "A simple framework to craft your story with clarity, connection, and confidence."
+    },
+    {
+      title: "How to monetize your message for impact",
+      desc: "Learn how to share your story in ways that inspire and generate purpose-driven income."
+    },
+    {
+      title: "3 powerful, guided exercises to help you unlock your story",
+      desc: "Reflective prompts to help you uncover, shape, and speak your message with ease."
+    },
+    {
+      title: "Clarity on your next steps",
+      desc: "Gain clarity on who your story is meant to reach and how to deliver it with impact, confidence, and purpose."
+    }
+  ];
+
   return (
-    <div>
-      <div className='bigLearn'>
-        <div className='contLearn'>
-          <h2>WHAT YOU'LL LEARN</h2>
-          <div className='learnGrid'>
-            <div className='gridItem'>
-              <h4>There's Power in Your Past</h4>
-              <p>Discover the hidden message in your lived experiences</p>
-            </div>
-            <div className='gridItem'>
-              <h4>From Silence to Significance</h4>
-              <p>Why your story matters—even if it's not dramatic</p>
-            </div>
-            <div className='gridItem'>
-              <h4>Dig It Out & Speak It Loud</h4>
-              <p>Simple steps to find, name, and own your message</p>
-            </div>
-            <div className='gridItem'>
-              <h4>Refine to Shine</h4>
-              <p>How to shape your story into something that influences, inspires, and multiplies</p>
-            </div>
-          </div>
+    <motion.div
+      className='bigLearn'
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      viewport={{ once: true }}
+    >
+      <div className='contLearn'>
+        <h2>WHAT YOU'LL LEARN</h2>
+        <div className='learnGrid'>
+          {gridItems.map((item, index) => (
+            <motion.div
+              className='gridItem'
+              key={index}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: index * 0.15 }}
+              viewport={{ once: true }}
+            >
+              <h4>{item.title}</h4>
+              <p>{item.desc}</p>
+            </motion.div>
+          ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
-}
+};
 
 export default Learn;
+
+
+
+
+
+
+
+
+
+
+
