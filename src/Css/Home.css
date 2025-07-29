@@ -91,22 +91,8 @@ background-color: #E8DAFC;
   border-radius: 10px;
   border: none;
   
-  /* background-color: #f8d7ff; */
-
- /* background-color: white; */
-/* color: #4A148C; */
-
-/* NEW */
-/* background-color: #FFF4FD;
-color: #7B1FA2;
-border: 1px solid #7B1FA2; */
-
-/* background-color: #FFFFFF;
-color: #6B21A8;
-border: 1px solid #6B21A8; */
-
-
-
+  
+  transition: all 0.2s ease;
 
 
 
@@ -117,8 +103,7 @@ color: #FFFFFF;   */
 background-color: #9D6BFA;
 color: #FFFFFF;
 
-
-
+ 
 
 
 
@@ -133,10 +118,12 @@ font-size: 1.1em;
 
 
 
+
 .down button:hover {
-  background-color: #5a82c1;
+  background-color: #844EF8;
   transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 4px 10px rgba(106, 13, 173, 0.5);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+
 }
 
 @media screen and (max-width: 1024px) {
