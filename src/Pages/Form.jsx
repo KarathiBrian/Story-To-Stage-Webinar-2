@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "../Css/Form.css";
 import Footer from '../Components/Footer';
+
 const Form = () => {
   const [loading, setLoading] = useState(true);
 
@@ -8,24 +9,16 @@ const Form = () => {
     <div className='formGoogle'>
       {loading && (
         <div className='loadingSpinner'>
-          <div className="dot-loader">
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
+          <div className="ripple-loader">
+            <div></div>
+            <div></div>
           </div>
-          <p>Just a sec! Getting your form ready...😊</p>
+          <p>Getting things ready for you... just a moment 😊</p>
         </div>
       )}
 
-
-
-
-
-
-
-
       <iframe
-      src='https://docs.google.com/forms/d/e/1FAIpQLSdYvbLSVlpEurtSFptgzO4xfTmWHUkqAUGJbEhoyh_1zXvpXw/viewform?usp=sharing&ouid=100944596123287161908'
+        src='https://docs.google.com/forms/d/e/1FAIpQLSdYvbLSVlpEurtSFptgzO4xfTmWHUkqAUGJbEhoyh_1zXvpXw/viewform?usp=sharing&ouid=100944596123287161908'
         width="100%"
         height="1800"
         style={{ border: "none" }}
@@ -36,6 +29,6 @@ const Form = () => {
       <Footer />
     </div>
   );
-}
+};
 
 export default Form;
