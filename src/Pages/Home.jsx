@@ -1,9 +1,6 @@
 import React from 'react';
 import "../Css/Home.css";
 import { useNavigate } from 'react-router-dom';
-// import mobileImg from "../assets/nw3.jpg"
-// import mobileImg from "../assets/cover1 1080X1080.png"
-// import mobileImg from "../assets/cover 1b.png"
 import mobileImg from "../assets/cover 1c.png"
 
 import desktopImg from "../assets/Homedesk.jpg";

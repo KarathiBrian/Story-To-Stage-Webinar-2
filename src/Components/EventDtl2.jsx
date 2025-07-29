@@ -1,6 +1,6 @@
 import React from 'react';
 import "../Css/EventDtl2.css";
-import image from "../assets/18.jpg";
+import image from "../assets/15d.png";
 import { useNavigate } from 'react-router-dom';
 
 const EventDtl2 = () => {
