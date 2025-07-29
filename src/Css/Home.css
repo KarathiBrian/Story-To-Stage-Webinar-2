@@ -1,4 +1,6 @@
-/* body {
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap');
+
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -99,9 +101,9 @@ color: #FFFFFF;
  
 
 
+  font-family: 'Playfair Display', serif;
 
-
-font-family: "poppins",sans-serif;
+/* font-family: "poppins",sans-serif; */
 font-size: 1.1em;
   font-weight: 500;
   cursor: pointer;
@@ -197,96 +199,63 @@ font-size: 1.1em;
   .nav {
     z-index: 999;
   }
-} */
+}
 
 
 
-body {
+
+
+/* body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F8EEFF;
+  color: #4A185A;
 }
 
-/* ✨ Animations */
-@keyframes fadeSlideUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes zoomImage {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.03);
-  }
-}
-
-@keyframes fadeInButton {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 .outerBig {
-  height: 80vh;
-  width: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   padding-top: 5vh;
 }
 
 .containerHold {
-  height: 100%;
   width: 100%;
-  background-color: #F8EEFF;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #F8EEFF;
 }
 
 .holder {
-  height: 90%;
-  width: 70%;
+  width: 72%;
+  border-radius: 24px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  border-radius: 20px;
-  overflow: hidden;
-  animation: fadeSlideUp 1.2s ease-in-out both;
+  box-shadow: 0 8px 20px rgba(128, 80, 160, 0.1);
+  background: #fff;
 }
 
 .up {
   height: 70%;
-  width: 100%;
-  border-radius: 10px 10px 0 0;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
 .up img {
-  height: 100%;
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: 100%;
+  object-fit: cover;
   transition: transform 6s ease;
 }
 
 .up:hover img {
-  animation: zoomImage 3s ease forwards;
+  transform: scale(1.03);
 }
 
 .desktop-image {
@@ -298,71 +267,43 @@ body {
 }
 
 .down {
-  height: 30%;
-  width: 100%;
   background-color: #E8DAFC;
-  border-radius: 0 0 10px 10px;
+  padding: 2rem 1.5rem;
   display: flex;
-  gap: 80px;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  flex-wrap: wrap;
 }
 
 .down button {
-  height: 45%;
-  width: 25%;
-  border-radius: 10px;
-  border: none;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
   background-color: #9D6BFA;
-  color: #FFFFFF;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.1em;
-  font-weight: 500;
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 5px rgba(106, 13, 173, 0.3);
-  opacity: 0;
-  animation: fadeInButton 1s ease forwards;
-}
-
-.down button:nth-child(1) {
-  animation-delay: 1.2s;
-}
-
-.down button:nth-child(2) {
-  animation-delay: 1.4s;
+  box-shadow: 0 4px 10px rgba(141, 83, 217, 0.25);
 }
 
 .down button:hover {
   background-color: #844EF8;
-  transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(130, 60, 200, 0.35);
 }
-
-/* 📱 Responsive Design */
 
 @media screen and (max-width: 1024px) {
   .holder {
     width: 85%;
-    height: 75%;
-  }
-
-  .up {
-    height: 77%;
   }
 
   .down {
-    height: 33%;
     flex-direction: column;
-    gap: 15px;
-    padding: 15px 0;
-  }
-
-  .down button {
-    width: 70%;
-    height: 50px;
-    font-size: 1em;
+    gap: 1rem;
   }
 
   .desktop-image {
@@ -377,11 +318,6 @@ body {
 @media screen and (max-width: 768px) {
   .holder {
     width: 90%;
-    height: 75%;
-  }
-
-  .up {
-    height: 70%;
   }
 
   .down button {
@@ -392,38 +328,12 @@ body {
 @media screen and (max-width: 480px) {
   .holder {
     width: 95%;
-    height: 75%;
-  }
-
-  .up {
-    height: 65%;
-  }
-
-  .down {
-    gap: 10px;
-    padding: 10px 0;
   }
 
   .down button {
     width: 90%;
-    height: 45px;
-    font-size: 0.95em;
+    font-size: 1rem;
   }
 }
 
-@media screen and (min-width: 1025px) {
-  .outerBig {
-    padding-top: 13vh;
-  }
-
-  .nav {
-    z-index: 999;
-  }
-}
-
-
-
-
-
-
-
+ */
