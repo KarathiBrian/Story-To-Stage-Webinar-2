@@ -41,6 +41,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 10px 0 0 0;
+
 }
 
 .whatHead h3 {
@@ -90,10 +91,10 @@ body {
   margin-right: 8px;
 }
 
-.leftUpContent h5 {
+.highlightText {
   font-family: "Open Sans", sans-serif;
   font-style: italic;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.5;
   color: #333333;
   margin: 12px 0 0 0;
