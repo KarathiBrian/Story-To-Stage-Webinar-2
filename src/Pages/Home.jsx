@@ -3,7 +3,7 @@ import "../Css/Home.css";
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import mobileImg from "../assets/cover 1c.png";
-import desktopImg from "../assets/Homedesk.jpg";
+import desktopImg from "../assets/Desktop cover.png";
 
 const Home = () => {
   const navigate = useNavigate();
